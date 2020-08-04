@@ -19,31 +19,31 @@ arch_lectura ();
   string nombre;
    string apellido;
    int edad;
-   char r;
+   char d;
    ofstream archivoprueba;
    string nombrearchivo;
-   cout<<"INGRESE EL NOMBRE DEL ARCHIVO: ";
+   cout<<"Ingrese el nombre del archivo: ";
    getline(cin,nombrearchivo);
    archivoprueba.open(nombrearchivo.c_str(),ios::app);
    do
     {
-    cout<<"\tIngrese el nombre:";
+    cout<<"\tIngrese el nombre,por favor :";
     getline(cin,nombre,'\n');
 
-    cout<<"\tIngrese el apellido:";
+    cout<<"\tIngrese el apellido, por favor:";
     getline(cin,apellido,'\n');
 
-    cout<<"\tIngrese la edad:";
+    cout<<"\tIngrese la edad, por favor:";
     cin>>edad;
 
     archivoprueba<<nombre<<" "<<apellido<<" "<<edad<<"\n";
 
-    cout<<"DESEA INGRESAR OTRO CONTACTO s/n";
-    cin>>r;
+    cout<<"DESEA INGRESAR OTRA INFORMACION ADICIONAL  s/n";
+    cin>>d;
 
     cin.ignore();
     }
-   while(r=='s');
+   while(d=='s');
 
    
    
@@ -56,7 +56,7 @@ arch_lectura ();
    string nombre;
    string apellido;
    int edad;
-   char r;
+   char d;
     
    ifstream archivolectura("contactos.txt");
    string texto;
