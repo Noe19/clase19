@@ -1,7 +1,5 @@
 #include <iostream>
 
-
-//LIBRERIA PARA TRABAJAR CON ARCHIVOS
 #include <fstream>
 
 void arch_prueba ();
@@ -29,13 +27,13 @@ arch_lectura ();
    archivoprueba.open(nombrearchivo.c_str(),ios::app);
    do
     {
-    cout<<"\tIngrese el nombre";
+    cout<<"\tIngrese el nombre:";
     getline(cin,nombre,'\n');
 
-    cout<<"\tIngrese el apellido";
+    cout<<"\tIngrese el apellido:";
     getline(cin,apellido,'\n');
 
-    cout<<"\tIngrese la edad";
+    cout<<"\tIngrese la edad:";
     cin>>edad;
 
     archivoprueba<<nombre<<" "<<apellido<<" "<<edad<<"\n";
@@ -77,4 +75,4 @@ arch_lectura ();
 
     }
    archivolectura.close(); 
-}
+}//carpeta contaxtos.txt
